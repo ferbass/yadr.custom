@@ -11,6 +11,7 @@ rm -rfv $HOME/.yadr/zsh/key-bindings.zsh
 ln -snfv $YADR/zsh/aliases.zsh $HOME/.yadr/zsh/aliases.custom.zsh
 ln -snfv $YADR/zsh/rbenv.zsh $HOME/.yadr/zsh/rbenv.custom.zsh
 ln -snfv $YADR/zsh/key-bindings.zsh $HOME/.yadr/zsh/zzzz_key-bindings.zsh
+ln -snfv $YADR/zsh/android.zsh $HOME/.yadr/zsh/android.zsh
 
 # vim
 rm -rfv $HOME/.vim/settings/neocomplete.vim
