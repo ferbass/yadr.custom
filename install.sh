@@ -13,6 +13,11 @@ ln -snfv $YADR/zsh/rbenv.zsh $HOME/.yadr/zsh/rbenv.custom.zsh
 ln -snfv $YADR/zsh/key-bindings.zsh $HOME/.yadr/zsh/zzzz_key-bindings.zsh
 ln -snfv $YADR/zsh/android.zsh $HOME/.yadr/zsh/android.zsh
 
+# slate
+cd /Applications && curl http://www.ninjamonkeysoftware.com/slate/versions/slate-latest.tar.gz | tar -xz
+git clone git@github.com:ferbass/dotfiles.git /tmp/dotefiles
+cp /tmp/dotefiles/.slate $HOME/.slate
+
 # vim
 rm -rfv $HOME/.vim/settings/neocomplete.vim
 rm -rfv $HOME/.vim/settings/disable-arrowkeys.vim
