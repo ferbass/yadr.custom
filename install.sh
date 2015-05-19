@@ -12,6 +12,7 @@ ln -snfv $YADR/zsh/aliases.zsh $HOME/.yadr/zsh/aliases.custom.zsh
 ln -snfv $YADR/zsh/rbenv.zsh $HOME/.yadr/zsh/rbenv.custom.zsh
 ln -snfv $YADR/zsh/key-bindings.zsh $HOME/.yadr/zsh/zzzz_key-bindings.zsh
 ln -snfv $YADR/zsh/android.zsh $HOME/.yadr/zsh/android.zsh
+ln -snfv $YADR/zsh/docker.zsh $HOME/.yadr/zsh/docker.zsh
 
 # slate
 cd /Applications && curl http://www.ninjamonkeysoftware.com/slate/versions/slate-latest.tar.gz | tar -xz
