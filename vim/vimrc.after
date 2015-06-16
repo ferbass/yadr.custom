@@ -1,6 +1,7 @@
 syntax on
 
 " Remember to set iTerm2, Preferences -> Profiles -> Terminal, Terminal Emulation: xterm-256color
-set background=dark
+set background=light
 let g:solarized_termtrans = 1
 colorscheme solarized
+set relativenumber
