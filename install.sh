@@ -1,4 +1,6 @@
 #!/bin/sh
+NAME=ferbass
+EMAIL=ferbass@gmail.com
 YADR=$HOME/.yadr.custom
 
 # remove vimify
@@ -15,7 +17,6 @@ ln -snfv $YADR/zsh/android.zsh $HOME/.yadr/zsh/android.zsh
 ln -snfv $YADR/zsh/docker.zsh $HOME/.yadr/zsh/docker.zsh
 
 # slate
-cd /Applications && curl http://www.ninjamonkeysoftware.com/slate/versions/slate-latest.tar.gz | tar -xz
 git clone git@github.com:ferbass/dotfiles.git /tmp/dotefiles
 cp /tmp/dotefiles/.slate $HOME/.slate
 
@@ -38,3 +39,6 @@ then
   git config --global user.email "$EMAIL"
   echo "Git credentials set to $NAME <$EMAIL>"
 fi
+
+#extras
+rake install
