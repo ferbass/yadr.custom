@@ -3,7 +3,7 @@ alias grunt="node_modules/grunt-cli/bin/grunt"
 alias redis.server="redis-server /usr/local/etc/redis.conf --daemonize yes"
 alias postgres.server="pg_ctl -D /usr/local/var/postgres"
 alias rm="rm -iv $1"
-
+alias ls-tree="ls -R | grep \":$\" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/ /' -e 's/-/|/'"
 # dev
 alias be="bundle exec"
 
