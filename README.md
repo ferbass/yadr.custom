@@ -2,7 +2,7 @@
 
 ### Original project
 
-[https://github.com/skwp/dotfiles](https://github.com/skwp/dotfiles)
+[https://github.com/skwp/dotfiles]()
 
 ### How to use
 
