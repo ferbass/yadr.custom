@@ -13,3 +13,11 @@ alias myip="curl ifconfig.me"
 
 # stuff
 alias router="ssh root@192.168.1.1"
+
+
+#should not be here
+export GPG_TTY=$(tty)
+
+# iCloud folder
+
+alias icloud="~/Library/Mobile\ Documents/com~apple~CloudDocs"
