@@ -33,5 +33,8 @@ then
   echo "Git credentials set to $NAME <$EMAIL>"
 fi
 
+# slate
+ln -snfv $YADR/slate/.slate $HOME/.slate
+
 #extras
 rake install
