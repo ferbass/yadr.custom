@@ -44,6 +44,7 @@ bind up:${monkey} ${right-column}
 bind down:${monkey}   ${middle-column}
 
 # Manual Layout Bindings
+bind /:${monkey} ${small-center}
 bind k:${monkey} ${full-screen}
 bind j:${monkey} ${center-screen}
 bind m:${monkey} ${bottom-right-small}
