@@ -1,0 +1,76 @@
+config defaultToCurrentScreen true
+config nudgePercentOf screenSize
+config resizePercentOf screenSize
+
+# Monitor Aliases
+alias mainscreen 1680x1050
+
+# Grabkey
+alias monkey ctrl;alt;cmd
+
+# Position Aliases
+alias left-side     corner top-left resize:screenSizeX/2.0;screenSizeY
+alias right-side    corner top-right resize:screenSizeX/2.0;screenSizeY
+alias full-screen   corner top-right resize:screenSizeX;screenSizeY
+
+alias quarter-top-right-screen corner top-right resize:screenSizeX/2.0;screenSizeY/2.0
+alias quarter-bottom-right-screen corner bottom-right resize:screenSizeX/2.0;screenSizeY/2.0
+
+alias quarter-top-left-screen corner top-left resize:screenSizeX/2.0;screenSizeY/2.0
+alias quarter-bottom-left-screen corner bottom-left resize:screenSizeX/2.0;screenSizeY/2.0
+
+alias center-screen move   screenOriginX+(screenSizeX/2-(screenSizeX*0.35));screenOriginY+(screenSizeY/2-(screenSizeY*0.35))  screenSizeX*0.7;screenSizeY*0.7
+alias small-center  move   screenOriginX+screenSizeX/3;screenOriginY+screenSizeY/4   4*screenSizeX/12;4*screenSizeY/12
+
+alias small-center-left-top move screenOriginX+(screenSizeX/2-(screenSizeX*0.35));screenOriginY+(screenSizeY/2-(screenSizeY*0.35))  screenSizeX*0.35;screenSizeY*0.35
+alias small-center-left-bottom move screenOriginX+(screenSizeX/2-(screenSizeX*0.35));screenOriginY+(screenSizeY/2-(screenSizeY*0))  screenSizeX*0.35;screenSizeY*0.35
+alias small-center-right-top move screenOriginX+(screenSizeX/2-(screenSizeX*0.0));screenOriginY+(screenSizeY/2-(screenSizeY*0.35))  screenSizeX*0.35;screenSizeY*0.35
+alias small-center-right-bottom move screenOriginX+(screenSizeX/2-(screenSizeX*0.0));screenOriginY+(screenSizeY/2-(screenSizeY*0))  screenSizeX*0.35;screenSizeY*0.35
+
+alias middle-column move   screenOriginX+screenSizeX/3.8;screenOriginY screenSizeX/1.358/2;screenSizeY
+alias right-column  move   screenOriginX+screenSizeX/3.8+screenSizeX/1.358/2;screenOriginY screenSizeX/1.358/2;screenSizeY
+
+alias small-right-bottom corner bottom-right resize:screenSizeX/4.0;screenSizeY/3.0
+
+alias bottom-right-small     move   screenOriginX+screenSizeX/2;screenOriginY+screenSizeY/2   4*screenSizeX/12;4*screenSizeY/12
+alias bottom-left-small      move   screenOriginX+screenSizeX/6;screenOriginY+screenSizeY/2   4*screenSizeX/12;4*screenSizeY/12
+alias top-right-small        move   screenOriginX+screenSizeX/2;screenOriginY+screenSizeY/6   4*screenSizeX/12;4*screenSizeY/12
+alias top-left-small         move   screenOriginX+screenSizeX/6;screenOriginY+screenSizeY/6   4*screenSizeX/12;4*screenSizeY/12
+
+# Move Windows
+bind right:${monkey}  push right bar-resize:screenSizeX/2
+bind left:${monkey}   push left  bar-resize:screenSizeX/2
+bind up:${monkey} ${right-column}
+bind down:${monkey}   ${middle-column}
+
+# Manual Layout Bindings
+bind k:${monkey} ${full-screen}
+bind j:${monkey} ${center-screen}
+bind m:${monkey} ${bottom-right-small}
+bind n:${monkey} ${bottom-left-small}
+bind b:${monkey} ${top-right-small}
+bind v:${monkey} ${top-left-small}
+bind h:${monkey} ${left-side}
+bind l:${monkey} ${right-side}
+bind o:${monkey} ${quarter-top-right-screen}
+bind p:${monkey} ${quarter-bottom-right-screen}
+bind u:${monkey} ${quarter-top-left-screen}
+bind i:${monkey} ${quarter-bottom-left-screen}
+bind 7:${monkey} ${small-center-left-top}
+bind 8:${monkey} ${small-center-left-bottom}
+bind 9:${monkey} ${small-center-right-top}
+bind 0:${monkey} ${small-center-right-bottom}
+
+# Automatic Layouts
+layout 1monitors 'Google Chrome' ${center-screen}
+
+layout 1monitors 'iTerm'         ${full-screen}
+layout 1monitors 'Google Chrome' ${center-screen}
+layout 1monitors 'Spotify'       ${center-screen}
+layout 1monitors 'Sarafi'        ${full-screen}
+layout 1monitors 'Xcode'         ${full-screen}
+layout 1monitors 'Spotify'       ${small-right-bottom}
+
+default 1monitors resolutions:${mainscreen}
+
+bind return:${monkey} layout 1monitors
