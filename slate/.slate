@@ -47,8 +47,8 @@ bind down:${monkey}   ${middle-column}
 bind k:${monkey} ${full-screen}
 bind j:${monkey} ${center-screen}
 bind m:${monkey} ${bottom-right-small}
-bind n:${monkey} ${bottom-left-small}
-bind b:${monkey} ${top-right-small}
+bind b:${monkey} ${bottom-left-small}
+bind n:${monkey} ${top-right-small}
 bind v:${monkey} ${top-left-small}
 bind h:${monkey} ${left-side}
 bind l:${monkey} ${right-side}
