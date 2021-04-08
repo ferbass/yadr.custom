@@ -21,3 +21,6 @@ export GPG_TTY=$(tty)
 # iCloud folder
 
 alias icloud="~/Library/Mobile\ Documents/com~apple~CloudDocs"
+
+# pyenv
+alias brew="env PATH=${PATH//$(pyenv root)\/shims:/} brew"
