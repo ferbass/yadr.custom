@@ -29,6 +29,9 @@ ln -snfv $YADR/vim/vimrc.after $HOME/.vimrc.after
 # finicky
 ln -snfv $YADR/finicky/.finicky.js $HOME/.finicky.js
 
+# iSlate
+ln -snfv $YADR/slate/.slate $HOME/.slate
+
 # git
 ln -snfv $YADR/git/gitconfig $HOME/.gitconfig.user
 read -p "Enter your git name: " NAME
