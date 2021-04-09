@@ -12,7 +12,7 @@ rm -v $HOME/.editrc
 rm -rfv $HOME/.yadr/zsh/key-bindings.zsh
 ln -snfv $YADR/zsh/aliases.zsh $HOME/.yadr/zsh/aliases.custom.zsh
 ln -snfv $YADR/zsh/key-bindings.zsh $HOME/.yadr/zsh/zzzz_key-bindings.zsh
-ln -snfv ~/.yadr.custom/zsh/ssh.zsh $HOME/.yadr/zsh/ssh.zsh
+ln -snfv $YADR/zsh/ssh.zsh $HOME/.yadr/zsh/ssh.zsh
 ln -snfv $YADR/zsh/pyenv.zsh $HOME/.yadr/zsh/pyenv.zsh
 ln -snfv $YADR/zsh/rbenv.zsh $HOME/.yadr/zsh/rbenv.zsh
 ln -snfv $YADR/zsh/drivemode.zsh $HOME/.yadr/zsh/drivemode.zsh
@@ -42,9 +42,6 @@ then
   git config --global user.email "$EMAIL"
   echo "Git credentials set to $NAME <$EMAIL>"
 fi
-
-# slate
-ln -snfv $YADR/slate/.slate $HOME/.slate
 
 #extras
 rake install
