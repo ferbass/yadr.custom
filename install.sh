@@ -16,7 +16,7 @@ ln -snfv $YADR/zsh/ssh.zsh $HOME/.yadr/zsh/ssh.zsh
 ln -snfv $YADR/zsh/pyenv.zsh $HOME/.yadr/zsh/pyenv.zsh
 ln -snfv $YADR/zsh/rbenv.zsh $HOME/.yadr/zsh/rbenv.zsh
 ln -snfv $YADR/zsh/drivemode.zsh $HOME/.yadr/zsh/drivemode.zsh
-ln -snfv $YADR/zsg/openssl.zsh $HOME/.yadr/zsh/openssl.zsh
+ln -snfv $YADR/zsh/openssl.zsh $HOME/.yadr/zsh/openssl.zsh
 
 # vim
 rm -rfv $HOME/.vim/settings/neocomplete.vim
