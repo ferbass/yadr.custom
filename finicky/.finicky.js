@@ -25,7 +25,7 @@ module.exports = {
               "id.atlassian.com",
               "atlassian.com"
 ]),
-      browser: "Firefox"
+      browser: "Google Chrome"
     },
     {
       match: finicky.matchHostnames(["facebook.com"]),

@@ -16,6 +16,7 @@ ln -snfv $YADR/zsh/ssh.zsh $HOME/.yadr/zsh/ssh.zsh
 ln -snfv $YADR/zsh/pyenv.zsh $HOME/.yadr/zsh/pyenv.zsh
 ln -snfv $YADR/zsh/rbenv.zsh $HOME/.yadr/zsh/rbenv.zsh
 ln -snfv $YADR/zsh/drivemode.zsh $HOME/.yadr/zsh/drivemode.zsh
+ln -snfv $YADR/zsg/openssl.zsh $HOME/.yadr/zsh/openssl.zsh
 
 # vim
 rm -rfv $HOME/.vim/settings/neocomplete.vim
@@ -23,6 +24,7 @@ rm -rfv $HOME/.vim/settings/disable-arrowkeys.vim
 ln -snfv $YADR/vim/guifont.vim $HOME/.vim/settings/guifont.custom.vim
 ln -snfv $YADR/vim/syntastic.vim $HOME/.vim/settings/syntastic.custom.vim
 ln -snfv $YADR/vim/guifont.vim $HOME/.vim/settings/zzzz_guifont.custom.vim
+ln -snfv $YADR/vim/vim-pandoc.vim $HOME/.vim/settings/vim-pandoc.vim
 ln -snfv $YADR/vim/vimrc.before $HOME/.vimrc.before
 ln -snfv $YADR/vim/vimrc.after $HOME/.vimrc.after
 
